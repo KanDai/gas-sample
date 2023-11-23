@@ -1,0 +1,21 @@
+{
+  "name": "gas-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "login": "clasp login",
+    "create": "clasp create --title ${npm_config_title} --rootDir ./src",
+    "push": "clasp push",
+    "pull": "clasp pull",
+    "open": "clasp open",
+    "init": "npm run login && npm run create -title=${npm_config_title} && mv src/.clasp.json .clasp.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.78"
+  }
+}
